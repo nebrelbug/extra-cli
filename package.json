@@ -1,0 +1,28 @@
+{
+  "name": "html-init",
+  "version": "1.0.0",
+  "description": "The must-have command line commands add-on",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/jshint/bin/jshint main.js"
+  },
+  "keywords": [
+    "command",
+    "line",
+    "cli",
+    "extra-cli",
+    "extra"
+  ],
+  "author": "Ben Gubler <nebrelbug@gmail.com> (https://bengubler.com)",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "html-init": "index.js"
+  },
+  "dependencies": {
+    "fs-extra": "^4.0.2"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.5"
+  }
+}
