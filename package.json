@@ -18,7 +18,6 @@
   "preferGlobal": true,
   "bin": {
     "e": "index.js",
-    "et": "testcommand.js"
   },
   "dependencies": {
     "colors": "^1.1.2",
