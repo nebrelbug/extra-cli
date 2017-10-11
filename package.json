@@ -4,7 +4,7 @@
   "description": "The must-have command line commands add-on",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
   "keywords": [
     "command",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/nebrelbug/extra-cli/issues"
   },
-  "homepage": "https://github.com/nebrelbug/extra-cli#readme"
+  "homepage": "https://github.com/nebrelbug/extra-cli#readme",
+  "devDependencies": {
+    "standard": "^10.0.3"
+  }
 }
