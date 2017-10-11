@@ -24,16 +24,16 @@ function lowerCaseArg (arg) {
     return arg.toLowerCase()
   }
 }
-var argOne = process.argv[2];
-var argTwo = process.argv[3];
-var argThree = process.argv[4];
-var argFour = process.argv[5];
-var argFive = process.argv[6];
-var argSix = process.argv[7];
+var argOne = process.argv[2]
+var argTwo = process.argv[3]
+var argThree = process.argv[4]
+var argFour = process.argv[5]
+var argFive = process.argv[6]
+var argSix = process.argv[7]
 console.log(argOne + ',' + argTwo + ',' + argThree + ',' + argFour + ',' + argFive + ',' + argSix)
 
-if (argOne === 'create' || argOne === 'c' || argOne === '-c' || argOne === 'make') {
-  /* argTwo = file or directory, argThree = path, argFour = overwrite, argFive = html*/
+if (lowerCaseArg(argOne) === 'create' || lowerCaseArg(argOne) === 'c' || lowerCaseArg(argOne) === '-c' || lowerCaseArg(argOne) === 'make') {
+  /* argTwo = file or directory, argThree = path, argFour = overwrite, argFive = html */
   console.log('Intent: create file')
   if (argTwo !== undefined) {
     var path = process.cwd() + '/' + argThree
