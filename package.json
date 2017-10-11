@@ -1,10 +1,10 @@
 {
-  "name": "html-init",
+  "name": "extra-cli",
   "version": "1.0.0",
   "description": "The must-have command line commands add-on",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "command",
@@ -17,12 +17,19 @@
   "license": "ISC",
   "preferGlobal": true,
   "bin": {
-    "html-init": "index.js"
+    "e": "index.js",
+    "et": "testcommand.js"
   },
   "dependencies": {
+    "colors": "^1.1.2",
     "fs-extra": "^4.0.2"
   },
-  "devDependencies": {
-    "jshint": "^2.9.5"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nebrelbug/extra-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nebrelbug/extra-cli/issues"
+  },
+  "homepage": "https://github.com/nebrelbug/extra-cli#readme"
 }
